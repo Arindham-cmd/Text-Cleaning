@@ -18,12 +18,12 @@ Writing down Steps in bullet point format for clear understanding.
 
 6. check the feature that has the textual content, if it is a review then you can go ahead with below code
 
-# for index,text in enumerate(data['content']):
-#   print('Review %d:\n'%(index+1),text)
+ for index,text in enumerate(data['content']):
+   print('Review %d:\n'%(index+1),text)
 
               or
               
-# ' '.join(data['content'].tolist())    ----> this line of code is majorly used. If the textual content records is too large then I would suggest to do this in a seperate notebook as doing in the same notebook will make the size too large. 
+ ' '.join(data['content'].tolist())    ----> this line of code is majorly used. If the textual content records is too large then I would suggest to do this in a seperate notebook as doing in the same notebook will make the size too large. 
 
 7. Check the number(len) of wordcount, special charachter and stop words each textual record contains. 
 8. If you want to see what are those words in specific then you can just remove the "len" function from the command line and you will see the list of words,
